@@ -25,8 +25,8 @@ pub struct KubernetesConfig<'a> {
 impl Default for KubernetesConfig<'_> {
     fn default() -> Self {
         Self {
-            symbol: "☸ ",
-            format: "[$symbol$context( \\($namespace\\))]($style) in ",
+            symbol: "☸",
+            format: "[$symbol $context( \\($namespace\\))]($style) in ",
             style: "cyan bold",
             disabled: true,
             context_aliases: HashMap::new(),

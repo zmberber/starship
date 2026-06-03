@@ -364,7 +364,7 @@ mod tests {
             .logical_path(root)
             .config(toml::toml! {
                 [pulumi]
-                format = "via [$symbol($username@)$stack]($style) "
+                format = "via [$symbol ($username@)$stack]($style) "
             })
             .collect();
         let expected = format!(
@@ -424,7 +424,7 @@ mod tests {
             .logical_path(root)
             .config(toml::toml! {
                 [pulumi]
-                format = "via [$symbol($username@)$stack]($style) "
+                format = "via [$symbol ($username@)$stack]($style) "
             })
             .collect();
         let expected = format!("via {} ", Color::Fixed(5).bold().paint(" launch"));
@@ -443,7 +443,7 @@ mod tests {
             .logical_path(dir.path())
             .config(toml::toml! {
                 [pulumi]
-                format = "in [$symbol($stack)]($style) "
+                format = "in [$symbol ($stack)]($style) "
             })
             .collect();
         let expected = format!("in {} ", Color::Fixed(5).bold().paint(" "));
@@ -465,7 +465,7 @@ mod tests {
             .logical_path(&child_dir)
             .config(toml::toml! {
                 [pulumi]
-                format = "in [$symbol($stack)]($style) "
+                format = "in [$symbol ($stack)]($style) "
                 search_upwards = false
             })
             .collect();
@@ -487,7 +487,7 @@ mod tests {
             .logical_path(&child_dir)
             .config(toml::toml! {
                 [pulumi]
-                format = "in [$symbol($stack)]($style) "
+                format = "in [$symbol ($stack)]($style) "
             })
             .collect();
         let expected = Some(format!("in {} ", Color::Fixed(5).bold().paint(" ")));

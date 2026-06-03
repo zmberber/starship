@@ -265,7 +265,7 @@ account = foo@example.com
             .env("CLOUDSDK_CONFIG", dir.path().to_string_lossy())
             .config(toml::toml! {
                 [gcloud]
-                format = "on [$symbol$account(\\($region\\))]($style) "
+                format = "on [$symbol  $account(\\($region\\))]($style) "
             })
             .collect();
         let expected = Some(format!("on {} ", Color::Blue.bold().paint("☁️  foo")));
@@ -353,7 +353,7 @@ region = us-central1
             .env("CLOUDSDK_CONFIG", dir.path().to_string_lossy())
             .config(toml::toml! {
                 [gcloud]
-                format = "on [$symbol$active]($style) "
+                format = "on [$symbol  $active]($style) "
             })
             .collect();
         let expected = Some(format!("on {} ", Color::Blue.bold().paint("☁️  default1")));
@@ -383,7 +383,7 @@ project = abc
             .env("CLOUDSDK_CONFIG", dir.path().to_string_lossy())
             .config(toml::toml! {
                 [gcloud]
-                format = "on [$symbol$project]($style) "
+                format = "on [$symbol  $project]($style) "
             })
             .collect();
         let expected = Some(format!("on {} ", Color::Blue.bold().paint("☁️  abc")));
@@ -414,7 +414,7 @@ project = abc
             .env("CLOUDSDK_CONFIG", dir.path().to_string_lossy())
             .config(toml::toml! {
                 [gcloud]
-                format = "on [$symbol$project]($style) "
+                format = "on [$symbol  $project]($style) "
             })
             .collect();
         let expected = Some(format!(
@@ -447,7 +447,7 @@ project = very-long-project-name
             .env("CLOUDSDK_CONFIG", dir.path().to_string_lossy())
             .config(toml::toml! {
                 [gcloud]
-                format = "on [$symbol$project]($style) "
+                format = "on [$symbol  $project]($style) "
                 [gcloud.project_aliases]
                 very-long-project-name = "vlpn"
             })
@@ -480,7 +480,7 @@ region = us-central1
             .env("CLOUDSDK_CONFIG", dir.path().to_string_lossy())
             .config(toml::toml! {
                 [gcloud]
-                format = "on [$symbol$region]($style) "
+                format = "on [$symbol  $region]($style) "
             })
             .collect();
         let expected = Some(format!(
@@ -504,7 +504,7 @@ region = us-central1
             .env("CLOUDSDK_CONFIG", dir.path().to_string_lossy())
             .config(toml::toml! {
                 [gcloud]
-                format = "on [$symbol$region]($style) "
+                format = "on [$symbol  $region]($style) "
                 [gcloud.region_aliases]
                 europe-west2 = "ew2"
             })
@@ -522,7 +522,7 @@ region = us-central1
             .env("CLOUDSDK_CONFIG", dir.path().to_string_lossy())
             .config(toml::toml! {
                 [gcloud]
-                format = "on [$symbol$region]($style) "
+                format = "on [$symbol  $region]($style) "
             })
             .collect();
         let expected = None;
@@ -572,7 +572,7 @@ project = overridden
             .env("CLOUDSDK_ACTIVE_CONFIG_NAME", "overridden")
             .config(toml::toml! {
                 [gcloud]
-                format = "on [$symbol$project]($style) "
+                format = "on [$symbol  $project]($style) "
             })
             .collect();
         #[rustfmt::skip]

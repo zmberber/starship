@@ -21,8 +21,8 @@ impl Default for CondaConfig<'_> {
     fn default() -> Self {
         Self {
             truncation_length: 1,
-            format: "via [$symbol$environment]($style) ",
-            symbol: "🅒 ",
+            format: "via [$symbol $environment]($style) ",
+            symbol: "🅒",
             style: "green bold",
             ignore_base: true,
             detect_env_vars: vec!["!PIXI_ENVIRONMENT_NAME"],

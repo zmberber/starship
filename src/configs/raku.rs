@@ -21,9 +21,9 @@ pub struct RakuConfig<'a> {
 impl Default for RakuConfig<'_> {
     fn default() -> Self {
         RakuConfig {
-            format: "via [$symbol($version-$vm_version )]($style)",
+            format: "via [$symbol ($version-$vm_version )]($style)",
             version_format: "${raw}",
-            symbol: "🦋 ",
+            symbol: "🦋",
             style: "149 bold",
             disabled: false,
             detect_extensions: vec!["p6", "pm6", "pod6", "raku", "rakumod"],

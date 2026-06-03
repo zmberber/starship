@@ -190,12 +190,12 @@ mod tests {
         let actual = ModuleRenderer::new("shlvl")
             .config(toml::toml! {
                 [shlvl]
-                symbol = "shlvl is "
+                symbol = "shlvl is"
                 disabled = false
             })
             .env(SHLVL_ENV_VAR, "2")
             .collect();
-        let expected = Some(format!("{} ", style().paint("shlvl is 2")));
+        let expected = Some(format!("{} ", style().paint("shlvl is  2")));
 
         assert_eq!(expected, actual);
     }
@@ -210,7 +210,7 @@ mod tests {
             })
             .env(SHLVL_ENV_VAR, "2")
             .collect();
-        let expected = Some(format!("↕️   going down {} GOING UP ", style().paint("2")));
+        let expected = Some(format!("↕️ going down {} GOING UP ", style().paint("2")));
 
         assert_eq!(expected, actual);
     }

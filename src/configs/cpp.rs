@@ -16,10 +16,10 @@ impl Default for CppConfig<'_> {
         Self {
             marker: std::marker::PhantomData::<CppConfigMarker>,
 
-            format: "via [$symbol($version(-$name) )]($style)",
+            format: "via [$symbol ($version(-$name) )]($style)",
             version_format: "v${raw}",
             style: "149 bold",
-            symbol: "C++ ",
+            symbol: "C++",
             disabled: true,
             detect_extensions: vec!["cpp", "cc", "cxx", "c++", "hpp", "hh", "hxx", "h++", "tcc"],
             detect_files: vec![],

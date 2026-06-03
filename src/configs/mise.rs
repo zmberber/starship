@@ -22,8 +22,8 @@ pub struct MiseConfig<'a> {
 impl Default for MiseConfig<'_> {
     fn default() -> Self {
         Self {
-            format: "on [$symbol$health]($style) ",
-            symbol: "mise ",
+            format: "on [$symbol $health]($style) ",
+            symbol: "mise",
             style: "bold purple",
             disabled: true,
             detect_extensions: vec![],

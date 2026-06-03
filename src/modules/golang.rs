@@ -270,7 +270,7 @@ mod tests {
             .path(dir.path())
             .config(toml::toml! {
                 [golang]
-                format = "via [$symbol($version )($mod_version )]($style)"
+                format = "via [$symbol ($version )($mod_version )]($style)"
             })
             .collect();
         let expected = Some(format!(
@@ -296,7 +296,7 @@ mod tests {
             .path(dir.path())
             .config(toml::toml! {
                 [golang]
-                format = "via [$symbol($version )($mod_version )]($style)"
+                format = "via [$symbol ($version )($mod_version )]($style)"
             })
             .collect();
         let expected = Some(format!("via {}", Color::Cyan.bold().paint("🐹 v1.12.1 ")));

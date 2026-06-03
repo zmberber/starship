@@ -21,9 +21,9 @@ pub struct TypstConfig<'a> {
 impl Default for TypstConfig<'_> {
     fn default() -> Self {
         Self {
-            format: "via [$symbol($version )]($style)",
+            format: "via [$symbol ($version )]($style)",
             version_format: "v${raw}",
-            symbol: "t ",
+            symbol: "t",
             style: "bold #0093A7",
             disabled: false,
             detect_extensions: vec!["typ"],

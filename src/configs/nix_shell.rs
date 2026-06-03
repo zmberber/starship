@@ -24,8 +24,8 @@ unless you can show that your changes do not affect this workaround.  */
 impl Default for NixShellConfig<'_> {
     fn default() -> Self {
         Self {
-            format: "via [$symbol$state( \\($name\\))]($style) ",
-            symbol: "❄️  ",
+            format: "via [$symbol  $state( \\($name\\))]($style) ",
+            symbol: "❄️",
             style: "bold blue",
             impure_msg: "impure",
             pure_msg: "pure",

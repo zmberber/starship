@@ -22,9 +22,9 @@ pub struct MavenConfig<'a> {
 impl Default for MavenConfig<'_> {
     fn default() -> Self {
         Self {
-            format: "via [$symbol($version )]($style)",
+            format: "via [$symbol ($version )]($style)",
             version_format: "v${raw}",
-            symbol: "🅼 ",
+            symbol: "🅼",
             style: "bold bright-cyan",
             disabled: false,
             recursive: false,

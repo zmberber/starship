@@ -195,7 +195,7 @@ mod tests {
             )
             .config(toml::toml! {
                 [ruby]
-                format = "via [$symbol($version)@($gemset )]($style)"
+                format = "via [$symbol ($version)@($gemset )]($style)"
                 version_format = "${raw}"
             })
             .collect();
@@ -222,7 +222,7 @@ mod tests {
             )
             .config(toml::toml! {
                 [ruby]
-                format = "via [$symbol($version)(@$gemset) ]($style)"
+                format = "via [$symbol ($version)(@$gemset) ]($style)"
             })
             .collect();
         let expected = Some(format!("via {}", Color::Red.bold().paint("💎 v2.5.1 ")));

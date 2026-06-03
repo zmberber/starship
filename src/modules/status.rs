@@ -383,7 +383,8 @@ mod tests {
             let actual = ModuleRenderer::new("status")
                 .config(toml::toml! {
                     [status]
-                    symbol = "[x](bold red) "
+                    format = "[$symbol $status]($style) "
+                    symbol = "[x](bold red)"
                     disabled = false
                 })
                 .status(*status)

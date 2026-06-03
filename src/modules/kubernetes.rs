@@ -990,7 +990,7 @@ users: []
             toml::toml! {
                 [kubernetes]
                 disabled = false
-                format = "[$symbol$context( \\($user\\))]($style) in "
+                format = "[$symbol $context( \\($user\\))]($style) in "
                 [kubernetes.user_aliases]
                 "test_user" = "test_alias"
                 ".*" = "literal match has precedence"
@@ -1006,7 +1006,7 @@ users: []
             toml::toml! {
                 [kubernetes]
                 disabled = false
-                format = "[$symbol$context( \\($user\\))]($style) in "
+                format = "[$symbol $context( \\($user\\))]($style) in "
                 [kubernetes.user_aliases]
                 "openshift-cluster/.*" = "test_alias"
             },
@@ -1021,7 +1021,7 @@ users: []
             toml::toml! {
                 [kubernetes]
                 disabled = false
-                format = "[$symbol$context( \\($user\\))]($style) in "
+                format = "[$symbol $context( \\($user\\))]($style) in "
                 [kubernetes.user_aliases]
                 "gke_.*_(?P<cluster>[\\w-]+)" = "example: $cluster"
             },
@@ -1036,7 +1036,7 @@ users: []
             toml::toml! {
                 [kubernetes]
                 disabled = false
-                format = "[$symbol$context( \\($user\\))]($style) in "
+                format = "[$symbol $context( \\($user\\))]($style) in "
                 [[kubernetes.contexts]]
                 context_pattern = ".*"
                 user_pattern = "gke_.*_(?P<cluster>[\\w-]+)"
@@ -1053,7 +1053,7 @@ users: []
             toml::toml! {
                 [kubernetes]
                 disabled = false
-                format = "[$symbol$context( \\($user\\))]($style) in "
+                format = "[$symbol $context( \\($user\\))]($style) in "
                 [kubernetes.user_aliases]
                 "input[.*" = "this does not match"
             },
@@ -1068,7 +1068,7 @@ users: []
             toml::toml! {
                 [kubernetes]
                 disabled = false
-                format = "[$symbol$context( \\($user\\))]($style) in "
+                format = "[$symbol $context( \\($user\\))]($style) in "
                 [kubernetes.user_aliases]
                 "([A-Z])\\w+" = "this does not match"
                 "gke_infra-user-28cccff6" = "this does not match"
@@ -1186,7 +1186,7 @@ users: []
             .env("KUBECONFIG", filename.to_string_lossy().as_ref())
             .config(toml::toml! {
                 [kubernetes]
-                format = "$symbol($user )($cluster )($namespace)"
+                format = "$symbol ($user )($cluster )($namespace)"
                 disabled = false
             })
             .collect();
@@ -1225,7 +1225,7 @@ users: []
             .env("KUBECONFIG", filename.to_string_lossy().as_ref())
             .config(toml::toml! {
                 [kubernetes]
-                format = "$symbol($user )($cluster )($namespace)"
+                format = "$symbol ($user )($cluster )($namespace)"
                 disabled = false
             })
             .collect();
@@ -1268,7 +1268,7 @@ users: []
                 [[kubernetes.contexts]]
                 context_pattern = "test.*"
                 style = "bold green"
-                symbol = "§ "
+                symbol = "§"
             })
             .collect();
 
@@ -1307,14 +1307,14 @@ users: []
             .config(toml::toml! {
                 [kubernetes]
                 disabled = false
-                format = "$symbol$context ($user )"
+                format = "$symbol $context ($user )"
 
                 [[kubernetes.contexts]]
                 context_pattern = "test.*"
                 user_pattern = "test.*"
                 context_alias = "yy"
                 user_alias = "xx"
-                symbol = "§ "
+                symbol = "§"
             })
             .collect();
 
@@ -1350,14 +1350,14 @@ users: []
             .config(toml::toml! {
                 [kubernetes]
                 disabled = false
-                format = "$symbol$context ($user )"
+                format = "$symbol $context ($user )"
 
                 [[kubernetes.contexts]]
                 context_pattern = "test.*"
                 user_pattern = "test_BAD.*"
                 context_alias = "yy"
                 user_alias = "xx"
-                symbol = "§ "
+                symbol = "§"
             })
             .collect();
 
@@ -1395,13 +1395,13 @@ users: []
                 [kubernetes]
                 disabled = false
                 style = "bold red"
-                format = "$symbol($user )($context )($cluster )($namespace)"
+                format = "$symbol ($user )($context )($cluster )($namespace)"
 
                 [[kubernetes.contexts]]
                 context_pattern = "test.*"
                 context_alias = "xyz"
                 user_alias = "abc"
-                symbol = "§ "
+                symbol = "§"
             })
             .collect();
 
@@ -1439,14 +1439,14 @@ users: []
                 [kubernetes]
                 disabled = false
                 style = "bold red"
-                format = "$symbol($user )($context )($cluster )($namespace)"
+                format = "$symbol ($user )($context )($cluster )($namespace)"
 
                 [[kubernetes.contexts]]
                 context_pattern = "test"
                 user_pattern = "not_matching"
                 context_alias = "xyz"
                 user_alias = "abc"
-                symbol = "§ "
+                symbol = "§"
             })
             .collect();
 
@@ -1485,7 +1485,7 @@ users: []
                 disabled = false
                 style = "bold red"
                 contexts = [
-                    {context_pattern = "tests_.*", style = "bold green", symbol = "§ "},
+                    {context_pattern = "tests_.*", style = "bold green", symbol = "§"},
                 ]
             })
             .collect();
@@ -1528,7 +1528,7 @@ users: []
                 disabled = false
                 style = "bold red"
                 contexts = [
-                    {context_pattern = "tests_(.*", style = "bold green", symbol = "§ "},
+                    {context_pattern = "tests_(.*", style = "bold green", symbol = "§"},
                 ]
             })
             .collect();

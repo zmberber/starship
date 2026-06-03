@@ -16,10 +16,10 @@ impl Default for CConfig<'_> {
         Self {
             marker: std::marker::PhantomData::<CConfigMarker>,
 
-            format: "via [$symbol($version(-$name) )]($style)",
+            format: "via [$symbol ($version(-$name) )]($style)",
             version_format: "v${raw}",
             style: "149 bold",
-            symbol: "C ",
+            symbol: "C",
             disabled: false,
             detect_extensions: vec!["c", "h"],
             detect_files: vec![],

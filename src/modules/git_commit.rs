@@ -261,14 +261,12 @@ mod tests {
             .stdout;
         let tag_output = str::from_utf8(&git_tag).unwrap().trim();
 
-        let expected_output = format!("{commit_output} {tag_output}");
-
         let actual = ModuleRenderer::new("git_commit")
             .config(toml::toml! {
                 [git_commit]
                     only_detached = false
                     tag_disabled = false
-                    tag_symbol = " "
+                    tag_symbol = ""
             })
             .path(repo_dir.path())
             .collect();
@@ -277,7 +275,7 @@ mod tests {
             "{} ",
             Color::Green
                 .bold()
-                .paint(format!("({})", expected_output.trim()))
+                .paint(format!("({} {})", commit_output, tag_output))
         ));
 
         assert_eq!(expected, actual);
@@ -313,13 +311,11 @@ mod tests {
             .stdout;
         let tag_output = str::from_utf8(&git_tag).unwrap().trim();
 
-        let expected_output = format!("{commit_output} {tag_output}");
-
         let actual = ModuleRenderer::new("git_commit")
             .config(toml::toml! {
                 [git_commit]
                     tag_disabled = false
-                    tag_symbol = " "
+                    tag_symbol = ""
             })
             .path(repo_dir.path())
             .collect();
@@ -328,7 +324,7 @@ mod tests {
             "{} ",
             Color::Green
                 .bold()
-                .paint(format!("({})", expected_output.trim()))
+                .paint(format!("({} {})", commit_output, tag_output))
         ));
 
         assert_eq!(expected, actual);
@@ -379,14 +375,12 @@ mod tests {
             .stdout;
         let tag_output = str::from_utf8(&git_tag).unwrap().trim();
 
-        let expected_output = format!("{commit_output} {tag_output}");
-
         let actual = ModuleRenderer::new("git_commit")
             .config(toml::toml! {
                 [git_commit]
                     only_detached = false
                     tag_disabled = false
-                    tag_symbol = " "
+                    tag_symbol = ""
             })
             .path(repo_dir.path())
             .collect();
@@ -395,7 +389,7 @@ mod tests {
             "{} ",
             Color::Green
                 .bold()
-                .paint(format!("({})", expected_output.trim()))
+                .paint(format!("({} {})", commit_output, tag_output))
         ));
 
         assert_eq!(expected, actual);
@@ -440,14 +434,12 @@ mod tests {
             .stdout;
         let tag_output = str::from_utf8(&git_tag).unwrap().trim();
 
-        let expected_output = format!("{commit_output} {tag_output}");
-
         let actual = ModuleRenderer::new("git_commit")
             .config(toml::toml! {
                 [git_commit]
                     only_detached = false
                     tag_disabled = false
-                    tag_symbol = " "
+                    tag_symbol = ""
             })
             .path(repo_dir.path())
             .collect();
@@ -456,7 +448,7 @@ mod tests {
             "{} ",
             Color::Green
                 .bold()
-                .paint(format!("({})", expected_output.trim()))
+                .paint(format!("({} {})", commit_output, tag_output))
         ));
 
         assert_eq!(expected, actual);

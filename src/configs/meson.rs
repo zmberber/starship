@@ -21,8 +21,8 @@ impl Default for MesonConfig<'_> {
         Self {
             truncation_length: u32::MAX,
             truncation_symbol: "…",
-            format: "via [$symbol$project]($style) ",
-            symbol: "⬢ ",
+            format: "via [$symbol $project]($style) ",
+            symbol: "⬢",
             style: "blue bold",
             disabled: false,
         }

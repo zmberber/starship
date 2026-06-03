@@ -17,8 +17,8 @@ pub struct GuixShellConfig<'a> {
 impl Default for GuixShellConfig<'_> {
     fn default() -> Self {
         Self {
-            format: "via [$symbol]($style) ",
-            symbol: "🐃 ",
+            format: "via [$symbol ]($style) ",
+            symbol: "🐃",
             style: "yellow bold",
             disabled: false,
         }

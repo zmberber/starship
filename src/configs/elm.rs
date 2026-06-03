@@ -21,9 +21,9 @@ pub struct ElmConfig<'a> {
 impl Default for ElmConfig<'_> {
     fn default() -> Self {
         Self {
-            format: "via [$symbol($version )]($style)",
+            format: "via [$symbol ($version )]($style)",
             version_format: "v${raw}",
-            symbol: "🌳 ",
+            symbol: "🌳",
             style: "cyan bold",
             disabled: false,
             detect_extensions: vec!["elm"],

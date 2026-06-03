@@ -21,10 +21,10 @@ pub struct RLangConfig<'a> {
 impl Default for RLangConfig<'_> {
     fn default() -> Self {
         Self {
-            format: "via [$symbol($version )]($style)",
+            format: "via [$symbol ($version )]($style)",
             version_format: "v${raw}",
             style: "blue bold",
-            symbol: "📐 ",
+            symbol: "📐",
             disabled: false,
             detect_extensions: vec!["R", "Rd", "Rmd", "Rproj", "Rsx"],
             detect_files: vec!["DESCRIPTION"],

@@ -335,7 +335,8 @@ mod test {
         let actual = ModuleRenderer::new("env_var.TEST_VAR")
             .config(toml::toml! {
                 [env_var.TEST_VAR]
-                symbol = "★ "
+                format = "with [$symbol $env_value]($style) "
+                symbol = "★"
             })
             .env("TEST_VAR", TEST_VAR_VALUE)
             .collect();

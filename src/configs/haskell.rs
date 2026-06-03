@@ -21,9 +21,9 @@ pub struct HaskellConfig<'a> {
 impl Default for HaskellConfig<'_> {
     fn default() -> Self {
         Self {
-            format: "via [$symbol($version )]($style)",
+            format: "via [$symbol ($version )]($style)",
             version_format: "v${raw}",
-            symbol: "λ ",
+            symbol: "λ",
             style: "bold purple",
             disabled: false,
             detect_extensions: vec!["hs", "cabal", "hs-boot"],

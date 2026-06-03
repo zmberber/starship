@@ -19,8 +19,8 @@ pub struct AzureConfig<'a> {
 impl Default for AzureConfig<'_> {
     fn default() -> Self {
         Self {
-            format: "on [$symbol($subscription)]($style) ",
-            symbol: "󰠅 ",
+            format: "on [$symbol ($subscription)]($style) ",
+            symbol: "󰠅",
             style: "blue bold",
             disabled: true,
             subscription_aliases: HashMap::new(),

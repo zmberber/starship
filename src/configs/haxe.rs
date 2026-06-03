@@ -21,9 +21,9 @@ pub struct HaxeConfig<'a> {
 impl Default for HaxeConfig<'_> {
     fn default() -> Self {
         Self {
-            format: "via [$symbol($version )]($style)",
+            format: "via [$symbol ($version )]($style)",
             version_format: "v${raw}",
-            symbol: "⌘ ",
+            symbol: "⌘",
             style: "bold fg:202",
             disabled: false,
             detect_extensions: vec!["hx", "hxml"],

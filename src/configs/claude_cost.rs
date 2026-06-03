@@ -20,8 +20,8 @@ pub struct ClaudeCostConfig<'a> {
 impl Default for ClaudeCostConfig<'_> {
     fn default() -> Self {
         Self {
-            format: "[$symbol(\\$$cost)]($style) ",
-            symbol: "💰 ",
+            format: "[$symbol (\\$$cost)]($style) ",
+            symbol: "💰",
             display: vec![
                 ClaudeDisplayConfig {
                     threshold: 0.00,

@@ -22,9 +22,9 @@ pub struct TerraformConfig<'a> {
 impl Default for TerraformConfig<'_> {
     fn default() -> Self {
         Self {
-            format: "via [$symbol$workspace]($style) ",
+            format: "via [$symbol $workspace]($style) ",
             version_format: "v${raw}",
-            symbol: "💠 ",
+            symbol: "💠",
             style: "bold 105",
             disabled: false,
             detect_extensions: vec!["tf", "tfplan", "tfstate"],

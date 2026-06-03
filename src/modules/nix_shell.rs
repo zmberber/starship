@@ -237,7 +237,7 @@ mod tests {
             .env("NIX_SHELL_LEVEL", "3")
             .config(toml::toml! {
                 [nix_shell]
-                format = "via [$symbol$state( \\($name\\)) $level]($style) "
+                format = "via [$symbol  $state( \\($name\\)) $level]($style) "
             })
             .collect();
         let expected = Some(format!("via {} ", Color::Blue.bold().paint("❄️  impure 3")));

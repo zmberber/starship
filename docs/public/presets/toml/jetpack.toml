@@ -94,7 +94,7 @@ $battery\
 $time"""
 
 [fill]
-symbol = ' '
+symbol = ''
 
 [character]
 format = "$symbol "
@@ -126,7 +126,7 @@ show_always = false
 [directory]
 home_symbol = "⌂"
 truncation_length = 2
-truncation_symbol = "□ "
+truncation_symbol = "□"
 read_only = " ◈"
 use_os_path_sep = true
 style = "italic blue"
@@ -138,7 +138,7 @@ repo_root_format = '[$before_root_path]($before_repo_root_style)[$repo_root]($re
 format = "[◄ $duration ](italic white)"
 
 [jobs]
-format = "[$symbol$number]($style) "
+format = "[$symbol $number]($style) "
 style = "white"
 symbol = "[▶](blue italic)"
 
@@ -211,7 +211,7 @@ version_format = "${raw}"
 [lua]
 format = " [lua](italic) [${symbol}${version}]($style)"
 version_format = "${raw}"
-symbol = "⨀ "
+symbol = "⨀"
 style = "bold bright-yellow"
 
 [nodejs]
@@ -227,31 +227,31 @@ version_format = "${raw}"
 
 [python]
 format = " [py](italic) [${symbol}${version}]($style)"
-symbol = "[⌉](bold bright-blue)⌊ "
+symbol = "[⌉](bold bright-blue)⌊"
 version_format = "${raw}"
 style = "bold bright-yellow"
 
 [ruby]
 format = " [rb](italic) [${symbol}${version}]($style)"
-symbol = "◆ "
+symbol = "◆"
 version_format = "${raw}"
 style = "bold red"
 
 [rust]
-format = " [rs](italic) [$symbol$version]($style)"
-symbol = "⊃ "
+format = " [rs](italic) [$symbol $version]($style)"
+symbol = "⊃"
 version_format = "${raw}"
 style = "bold red"
 
 [package]
-format = " [pkg](italic dimmed) [$symbol$version]($style)"
+format = " [pkg](italic dimmed) [$symbol $version]($style)"
 version_format = "${raw}"
-symbol = "◨ "
+symbol = "◨"
 style = "dimmed yellow italic bold"
 
 [swift]
 format = " [sw](italic) [${symbol}${version}]($style)"
-symbol = "◁ "
+symbol = "◁"
 style = "bold bright-red"
 version_format = "${raw}"
 
@@ -259,67 +259,67 @@ version_format = "${raw}"
 disabled = true
 format = " [aws](italic) [$symbol $profile $region]($style)"
 style = "bold blue"
-symbol = "▲ "
+symbol = "▲"
 
 [buf]
-symbol = "■ "
+symbol = "■"
 format = " [buf](italic) [$symbol $version $buf_version]($style)"
 
 [c]
-symbol = "ℂ "
-format = " [$symbol($version(-$name))]($style)"
+symbol = "ℂ"
+format = " [$symbol ($version(-$name))]($style)"
 
 [cpp]
-symbol = "ℂ "
-format = " [$symbol($version(-$name))]($style)"
+symbol = "ℂ"
+format = " [$symbol ($version(-$name))]($style)"
 
 [conda]
-symbol = "◯ "
-format = " conda [$symbol$environment]($style)"
+symbol = "◯"
+format = " conda [$symbol $environment]($style)"
 
 [pixi]
-symbol = "■ "
-format = " pixi [$symbol$version ($environment )]($style)"
+symbol = "■"
+format = " pixi [$symbol $version ($environment )]($style)"
 
 [dart]
-symbol = "◁◅ "
-format = " dart [$symbol($version )]($style)"
+symbol = "◁◅"
+format = " dart [$symbol ($version )]($style)"
 
 [docker_context]
-symbol = "◧ "
-format = " docker [$symbol$context]($style)"
+symbol = "◧"
+format = " docker [$symbol $context]($style)"
 
 [elixir]
-symbol = "△ "
+symbol = "△"
 format = " exs [$symbol $version OTP $otp_version ]($style)"
 
 [elm]
-symbol = "◩ "
-format = " elm [$symbol($version )]($style)"
+symbol = "◩"
+format = " elm [$symbol ($version )]($style)"
 
 [golang]
-symbol = "∩ "
-format = " go [$symbol($version )]($style)"
+symbol = "∩"
+format = " go [$symbol ($version )]($style)"
 
 [haskell]
-symbol = "❯λ "
-format = " hs [$symbol($version )]($style)"
+symbol = "❯λ"
+format = " hs [$symbol ($version )]($style)"
 
 [java]
-symbol = "∪ "
+symbol = "∪"
 format = " java [${symbol}(${version} )]($style)"
 
 [julia]
-symbol = "◎ "
-format = " jl [$symbol($version )]($style)"
+symbol = "◎"
+format = " jl [$symbol ($version )]($style)"
 
 [memory_usage]
-symbol = "▪▫▪ "
+symbol = "▪▫▪"
 format = " mem [${ram}( ${swap})]($style)"
 
 [nim]
-symbol = "▴▲▴ "
-format = " nim [$symbol($version )]($style)"
+symbol = "▴▲▴"
+format = " nim [$symbol ($version )]($style)"
 
 [nix_shell]
 style = 'bold italic dimmed blue'
@@ -330,5 +330,5 @@ pure_msg = '[⌾](bold dimmed green)'
 unknown_msg = '[◌](bold dimmed yellow)'
 
 [spack]
-symbol = "◇ "
-format = " spack [$symbol$environment]($style)"
+symbol = "◇"
+format = " spack [$symbol $environment]($style)"

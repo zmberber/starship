@@ -23,8 +23,8 @@ pub struct MojoConfig<'a> {
 impl Default for MojoConfig<'_> {
     fn default() -> Self {
         Self {
-            format: "with [$symbol($version )]($style)",
-            symbol: "🔥 ",
+            format: "with [$symbol ($version )]($style)",
+            symbol: "🔥",
             style: "bold 208",
             disabled: false,
             detect_extensions: vec!["mojo", "🔥"],

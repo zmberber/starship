@@ -42,22 +42,13 @@ pub fn module<'a>(context: &'a Context) -> Option<Module<'a>> {
 
     let parsed = StringFormatter::new(config.format).and_then(|formatter| {
         formatter
-            .map_meta(|var, _| match var {
-                "ssh_symbol" => {
-                    if ssh_connection.is_some() {
-                        Some(config.ssh_symbol)
-                    } else {
-                        None
-                    }
-                }
-                _ => None,
-            })
             .map_style(|variable| match variable {
                 "style" => Some(Ok(config.style)),
                 _ => None,
             })
             .map(|variable| match variable {
                 "hostname" => Some(Ok(host)),
+                "ssh_symbol" => ssh_connection.is_some().then_some(Ok(config.ssh_symbol)),
                 _ => None,
             })
             .parse(None, Some(context))

@@ -21,9 +21,9 @@ pub struct DenoConfig<'a> {
 impl Default for DenoConfig<'_> {
     fn default() -> Self {
         Self {
-            format: "via [$symbol($version )]($style)",
+            format: "via [$symbol ($version )]($style)",
             version_format: "v${raw}",
-            symbol: "🦕 ",
+            symbol: "🦕",
             style: "green bold",
             disabled: false,
             detect_extensions: vec![],

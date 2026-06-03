@@ -23,11 +23,11 @@ impl Default for GitCommitConfig<'_> {
         Self {
             // be consistent with git by default, which has DEFAULT_ABBREV set to 7
             commit_hash_length: 7,
-            format: "[\\($hash$tag\\)]($style) ",
+            format: "[\\($hash( $tag)\\)]($style) ",
             style: "green bold",
             only_detached: true,
             disabled: false,
-            tag_symbol: " 🏷  ",
+            tag_symbol: "🏷",
             tag_disabled: true,
             tag_max_candidates: 0,
         }

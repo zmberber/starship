@@ -128,7 +128,7 @@ mod tests {
         let actual = ModuleRenderer::new("mojo")
             .config(toml::toml! {
                 [mojo]
-                format = "with [$symbol($version )($hash )]($style)"
+                format = "with [$symbol ($version )($hash )]($style)"
             })
             .path(dir.path())
             .collect()

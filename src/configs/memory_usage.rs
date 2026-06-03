@@ -19,9 +19,9 @@ impl Default for MemoryConfig<'_> {
     fn default() -> Self {
         Self {
             threshold: 75,
-            format: "via $symbol[$ram( | $swap)]($style) ",
+            format: "via $symbol [$ram( | $swap)]($style) ",
             style: "white bold dimmed",
-            symbol: "🐏 ",
+            symbol: "🐏",
             disabled: true,
         }
     }

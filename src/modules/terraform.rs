@@ -180,7 +180,7 @@ is 0.12.14. You can update by downloading from www.terraform.io/downloads.html
             .path(dir.path())
             .config(toml::toml! {
                 [terraform]
-                format = "via [$symbol$version $workspace]($style) "
+                format = "via [$symbol $version $workspace]($style) "
             })
             .collect();
 
@@ -205,7 +205,7 @@ is 0.12.14. You can update by downloading from www.terraform.io/downloads.html
             .path(dir.path())
             .config(toml::toml! {
                 [terraform]
-                format = "via [$symbol$version $workspace]($style) "
+                format = "via [$symbol $version $workspace]($style) "
             })
             .collect();
 

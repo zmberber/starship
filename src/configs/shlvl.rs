@@ -21,8 +21,8 @@ impl Default for ShLvlConfig<'_> {
     fn default() -> Self {
         Self {
             threshold: 2,
-            format: "[$symbol$shlvl]($style) ",
-            symbol: "↕️  ", // extra space for emoji
+            format: "[$symbol  $shlvl]($style) ",
+            symbol: "↕️", // extra space for emoji
             repeat: false,
             repeat_offset: 0,
             style: "bold yellow",

@@ -260,7 +260,7 @@ mod tests {
         let actual = ModuleRenderer::new("azure")
             .config(toml::toml! {
             [azure]
-            format = "on [$symbol($username)]($style)"
+            format = "on [$symbol ($username)]($style)"
             disabled = false
             })
             .env("AZURE_CONFIG_DIR", dir_path.as_ref())
@@ -331,7 +331,7 @@ mod tests {
         let actual = ModuleRenderer::new("azure")
             .config(toml::toml! {
             [azure]
-            format = "on [$symbol($subscription:$username)]($style)"
+            format = "on [$symbol ($subscription:$username)]($style)"
             disabled = false
             })
             .env("AZURE_CONFIG_DIR", dir_path.as_ref())
@@ -402,7 +402,7 @@ mod tests {
         let actual = ModuleRenderer::new("azure")
             .config(toml::toml! {
             [azure]
-            format = "on [$symbol($subscription:$username)]($style)"
+            format = "on [$symbol ($subscription:$username)]($style)"
             disabled = false
             })
             .env("AZURE_CONFIG_DIR", dir_path.as_ref())
@@ -472,7 +472,7 @@ mod tests {
         let actual = ModuleRenderer::new("azure")
             .config(toml::toml! {
             [azure]
-            format = "on [$symbol($subscription:$username)]($style)"
+            format = "on [$symbol ($subscription:$username)]($style)"
             disabled = false
             })
             .env("AZURE_CONFIG_DIR", dir_path.as_ref())
@@ -539,7 +539,7 @@ mod tests {
         let actual = ModuleRenderer::new("azure")
             .config(toml::toml! {
             [azure]
-            format = "on [$symbol($subscription:$username)]($style)"
+            format = "on [$symbol ($subscription:$username)]($style)"
             disabled = false
             })
             .env("AZURE_CONFIG_DIR", dir_path.as_ref())
@@ -607,7 +607,7 @@ mod tests {
         let actual = ModuleRenderer::new("azure")
             .config(toml::toml! {
             [azure]
-            format = "on [$symbol($subscription:$username)]($style)"
+            format = "on [$symbol ($subscription:$username)]($style)"
             disabled = false
             })
             .env("AZURE_CONFIG_DIR", dir_path.as_ref())
@@ -678,7 +678,7 @@ mod tests {
         let actual = ModuleRenderer::new("azure")
             .config(toml::toml! {
                 [azure]
-                format = "on [$symbol($subscription:$username)]($style)"
+                format = "on [$symbol ($subscription:$username)]($style)"
                 disabled = false
                 [azure.subscription_aliases]
                 VeryLongSubscriptionName = "vlsn"

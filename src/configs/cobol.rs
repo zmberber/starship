@@ -21,9 +21,9 @@ pub struct CobolConfig<'a> {
 impl Default for CobolConfig<'_> {
     fn default() -> Self {
         Self {
-            format: "via [$symbol($version )]($style)",
+            format: "via [$symbol ($version )]($style)",
             version_format: "v${raw}",
-            symbol: "⚙️ ",
+            symbol: "⚙️",
             style: "bold blue",
             disabled: false,
             detect_extensions: vec!["cbl", "cob", "CBL", "COB"],

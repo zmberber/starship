@@ -689,7 +689,7 @@ credential_process = /opt/bin/awscreds-retriever
             .env("AWS_ACCESS_KEY_ID", "dummy")
             .config(toml::toml! {
                 [aws]
-                format = "on [$symbol$region]($style) "
+                format = "on [$symbol  $region]($style) "
             })
             .collect();
         let expected = Some(format!(
@@ -708,7 +708,7 @@ credential_process = /opt/bin/awscreds-retriever
             .env("AWS_ACCESS_KEY_ID", "dummy")
             .config(toml::toml! {
                 [aws]
-                format = "on [$symbol$profile]($style) "
+                format = "on [$symbol  $profile]($style) "
             })
             .collect();
         let expected = Some(format!(
@@ -726,7 +726,7 @@ credential_process = /opt/bin/awscreds-retriever
             .env("AWS_ACCESS_KEY_ID", "dummy")
             .config(toml::toml! {
                 [aws]
-                format = "on [$symbol$profile]($style) "
+                format = "on [$symbol  $profile]($style) "
             })
             .collect();
         let expected = Some(format!("on {} ", Color::Yellow.bold().paint("☁️  ")));

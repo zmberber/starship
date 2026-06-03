@@ -21,9 +21,9 @@ pub struct RedConfig<'a> {
 impl Default for RedConfig<'_> {
     fn default() -> Self {
         Self {
-            format: "via [$symbol($version )]($style)",
+            format: "via [$symbol ($version )]($style)",
             version_format: "v${raw}",
-            symbol: "🔺 ",
+            symbol: "🔺",
             style: "red bold",
             disabled: false,
             detect_extensions: vec!["red", "reds"],

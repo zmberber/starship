@@ -153,7 +153,7 @@ mod tests {
             Some(toml::toml! {
                 [fossil_branch]
                 style = "underline blue"
-                symbol = "F "
+                symbol = "F"
                 truncation_length = 10
                 truncation_symbol = "%"
                 disabled = false

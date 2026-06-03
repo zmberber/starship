@@ -368,9 +368,9 @@ mod tests {
     fn test_format_symbol_style() -> io::Result<()> {
         test_format(
             "1337_hello_world",
-            "$symbol[$branch]($style)",
+            "$symbol [$branch]($style)",
             r#"
-            symbol = "git: "
+            symbol = "git:"
             style = "green"
         "#,
             format!("git: {}", Color::Green.paint("1337_hello_world"),),

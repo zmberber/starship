@@ -186,7 +186,7 @@ mod tests {
         let actual = ModuleRenderer::new("claude_cost")
             .config(toml::toml! {
                 [claude_cost]
-                format = "[$symbol(\\$$cost) (\\(+ $lines_added - $lines_removed\\))]($style) "
+                format = "[$symbol (\\$$cost) (\\(+ $lines_added - $lines_removed\\))]($style) "
                 [[claude_cost.display]]
                 threshold = 0.0
                 style = "bold yellow"
@@ -226,7 +226,7 @@ mod tests {
 
         let config = toml::toml! {
             [claude_cost]
-            format = "[$symbol(\\$$cost)]($style) "
+            format = "[$symbol (\\$$cost)]($style) "
             [[claude_cost.display]]
             threshold = 0.0
             style = "bold green"

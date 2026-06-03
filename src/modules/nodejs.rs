@@ -304,7 +304,7 @@ mod tests {
             .path(dir.path())
             .config(toml::toml! {
                 [nodejs]
-                format = "via [$symbol($version )($engines_version )]($style)"
+                format = "via [$symbol ($version )($engines_version )]($style)"
             })
             .collect();
         let expected = Some(format!(
@@ -333,7 +333,7 @@ mod tests {
             .path(dir.path())
             .config(toml::toml! [
                 [nodejs]
-                format = "via [$symbol($version )($engines_version )]($style)"
+                format = "via [$symbol ($version )($engines_version )]($style)"
             ])
             .collect();
         let expected = Some(format!("via {}", Color::Green.bold().paint(" v12.0.0 ")));
@@ -351,7 +351,7 @@ mod tests {
             .path(dir.path())
             .config(toml::toml! {
                 [nodejs]
-                format = "via [$symbol($version )($engines_version )]($style)"
+                format = "via [$symbol ($version )($engines_version )]($style)"
             })
             .collect();
         let expected = Some(format!("via {}", Color::Green.bold().paint(" v12.0.0 ")));

@@ -22,9 +22,9 @@ pub struct RubyConfig<'a> {
 impl Default for RubyConfig<'_> {
     fn default() -> Self {
         Self {
-            format: "via [$symbol($version )]($style)",
+            format: "via [$symbol ($version )]($style)",
             version_format: "v${raw}",
-            symbol: "💎 ",
+            symbol: "💎",
             style: "bold red",
             disabled: false,
             detect_extensions: vec!["rb"],

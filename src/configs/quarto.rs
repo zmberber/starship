@@ -21,9 +21,9 @@ pub struct QuartoConfig<'a> {
 impl Default for QuartoConfig<'_> {
     fn default() -> Self {
         Self {
-            format: "via [$symbol($version )]($style)",
+            format: "via [$symbol ($version )]($style)",
             version_format: "v${raw}",
-            symbol: "⨁ ",
+            symbol: "⨁",
             style: "bold #75AADB",
             disabled: false,
             detect_extensions: vec!["qmd"],

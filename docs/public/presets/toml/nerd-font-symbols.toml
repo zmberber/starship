@@ -1,170 +1,170 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 [aws]
-symbol = " "
+symbol = ""
 
 [azure]
-symbol = " "
+symbol = ""
 
 [battery]
-full_symbol = "󰁹 "
-charging_symbol = "󰂄 "
-discharging_symbol = "󰂃 "
-unknown_symbol = "󰂑 "
-empty_symbol = "󰂎 "
+full_symbol = "󰁹"
+charging_symbol = "󰂄"
+discharging_symbol = "󰂃"
+unknown_symbol = "󰂑"
+empty_symbol = "󰂎"
 
 [buf]
-symbol = " "
+symbol = ""
 
 [bun]
-symbol = " "
+symbol = ""
 
 [c]
-symbol = " "
+symbol = ""
 
 [cpp]
-symbol = " "
+symbol = ""
 
 [cmake]
-symbol = " "
+symbol = ""
 
 [cobol]
-symbol = " "
+symbol = ""
 
 [conda]
-symbol = " "
+symbol = ""
 
 [container]
-symbol = " "
+symbol = ""
 
 [crystal]
-symbol = " "
+symbol = ""
 
 [dart]
-symbol = " "
+symbol = ""
 
 [deno]
-symbol = " "
+symbol = ""
 
 [direnv]
-symbol = " "
+symbol = ""
 
 [directory]
 read_only = " 󰌾"
 
 [docker_context]
-symbol = " "
+symbol = ""
 
 [dotnet]
-symbol = " "
+symbol = ""
 
 [elixir]
-symbol = " "
+symbol = ""
 
 [elm]
-symbol = " "
+symbol = ""
 
 [erlang]
-symbol = " "
+symbol = ""
 
 [fennel]
-symbol = " "
+symbol = ""
 
 [fortran]
-symbol = " "
+symbol = ""
 
 [fossil_branch]
-symbol = " "
+symbol = ""
 
 [gcloud]
-symbol = "󱇶 "
+symbol = "󱇶"
 
 [gleam]
-symbol = " "
+symbol = ""
 
 [git_branch]
-symbol = " "
+symbol = ""
 
 [git_commit]
-tag_symbol = '  '
+tag_symbol = ' '
 
 [golang]
-symbol = " "
+symbol = ""
 
 [gradle]
-symbol = " "
+symbol = ""
 
 [guix_shell]
-symbol = " "
+symbol = ""
 
 [haskell]
-symbol = " "
+symbol = ""
 
 [haxe]
-symbol = " "
+symbol = ""
 
 [helm]
-symbol = " "
+symbol = ""
 
 [hg_branch]
-symbol = " "
+symbol = ""
 
 [hostname]
-ssh_symbol = " "
+ssh_symbol = ""
 
 [java]
-symbol = " "
+symbol = ""
 
 [julia]
-symbol = " "
+symbol = ""
 
 [kotlin]
-symbol = " "
+symbol = ""
 
 [kubernetes]
-symbol = "󱃾 "
+symbol = "󱃾"
 
 [lua]
-symbol = " "
+symbol = ""
 
 [maven]
-symbol = " "
+symbol = ""
 
 [memory_usage]
-symbol = "󰍛 "
+symbol = "󰍛"
 
 [meson]
-symbol = "󰔷 "
+symbol = "󰔷"
 
 [mojo]
-symbol = "󰈸 "
+symbol = "󰈸"
 
 [nats]
-symbol = " "
+symbol = ""
 
 [netns]
-symbol = "󰛳 "
+symbol = "󰛳"
 
 [nim]
-symbol = " "
+symbol = ""
 
 [nix_shell]
-symbol = " "
+symbol = ""
 
 [nodejs]
-symbol = " "
+symbol = ""
 
 [ocaml]
-symbol = " "
+symbol = ""
 
 [odin]
-symbol = "󰟢 "
+symbol = "󰟢"
 
 [opa]
-symbol = " "
+symbol = ""
 
 [openstack]
-symbol = " "
+symbol = ""
 
 [os.symbols]
 AIX = " "
@@ -227,82 +227,82 @@ Windows = "󰍲 "
 Zorin = " "
 
 [package]
-symbol = "󰏗 "
+symbol = "󰏗"
 
 [perl]
-symbol = " "
+symbol = ""
 
 [php]
-symbol = " "
+symbol = ""
 
 [pijul_channel]
-symbol = " "
+symbol = ""
 
 [pixi]
-symbol = "󰏗 "
+symbol = "󰏗"
 
 [pulumi]
-symbol = " "
+symbol = ""
 
 [purescript]
-symbol = " "
+symbol = ""
 
 [python]
-symbol = " "
+symbol = ""
 
 [raku]
-symbol = "󱖊 "
+symbol = "󱖊"
 
 [red]
-symbol = "󱍼 "
+symbol = "󱍼"
 
 [rlang]
-symbol = "󰟔 "
+symbol = "󰟔"
 
 [ruby]
-symbol = " "
+symbol = ""
 
 [rust]
-symbol = "󱘗 "
+symbol = "󱘗"
 
 [scala]
-symbol = " "
+symbol = ""
 
 [shlvl]
-symbol = "󰹍 "
+symbol = "󰹍"
 
 [singularity]
-symbol = " "
+symbol = ""
 
 [solidity]
-symbol = " "
+symbol = ""
 
 [spack]
-symbol = " "
+symbol = ""
 
 [status]
-symbol = " "
+symbol = ""
 
 [sudo]
-symbol = " "
+symbol = ""
 
 [swift]
-symbol = " "
+symbol = ""
 
 [terraform]
-symbol = " "
+symbol = ""
 
 [vlang]
-symbol = " "
+symbol = ""
 
 [typst]
-symbol = " "
+symbol = ""
 
 [vagrant]
-symbol = " "
+symbol = ""
 
 [xmake]
-symbol = " "
+symbol = ""
 
 [zig]
-symbol = " "
+symbol = ""

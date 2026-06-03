@@ -22,9 +22,9 @@ pub struct FennelConfig<'a> {
 impl Default for FennelConfig<'_> {
     fn default() -> Self {
         Self {
-            format: "via [$symbol($version )]($style)",
+            format: "via [$symbol ($version )]($style)",
             version_format: "v${raw}",
-            symbol: "🧅 ",
+            symbol: "🧅",
             style: "bold green",
             disabled: true,
             detect_extensions: vec!["fnl"],

@@ -24,8 +24,8 @@ pub struct SolidityConfig<'a> {
 impl Default for SolidityConfig<'_> {
     fn default() -> Self {
         Self {
-            format: "via [$symbol($version)]($style)",
-            symbol: "S ",
+            format: "via [$symbol ($version)]($style)",
+            symbol: "S",
             style: "bold blue",
             compiler: VecOr(vec!["solc"]),
             version_format: "v${major}.${minor}.${patch}",

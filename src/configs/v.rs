@@ -21,9 +21,9 @@ pub struct VConfig<'a> {
 impl Default for VConfig<'_> {
     fn default() -> Self {
         Self {
-            format: "via [$symbol($version )]($style)",
+            format: "via [$symbol ($version )]($style)",
             version_format: "v${raw}",
-            symbol: "V ",
+            symbol: "V",
             style: "blue bold",
             disabled: false,
             detect_extensions: vec!["v"],

@@ -52,8 +52,8 @@ pub struct AwsConfig<'a> {
 impl Default for AwsConfig<'_> {
     fn default() -> Self {
         Self {
-            format: "on [$symbol($profile )(\\($region\\) )(\\[$duration\\] )]($style)",
-            symbol: "☁️  ",
+            format: "on [$symbol  ($profile )(\\($region\\) )(\\[$duration\\] )]($style)",
+            symbol: "☁️",
             style: "bold yellow",
             disabled: false,
             region_aliases: HashMap::new(),

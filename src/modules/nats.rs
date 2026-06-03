@@ -75,8 +75,8 @@ mod tests {
         let actual = ModuleRenderer::new("nats")
             .config(toml::toml! {
                 [nats]
-                format = "[$symbol$name](bold red)"
-                symbol = "✉️ "
+                format = "[$symbol $name](bold red)"
+                symbol = "✉️"
                 disabled = false
             })
             .collect();

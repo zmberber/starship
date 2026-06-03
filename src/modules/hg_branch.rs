@@ -248,7 +248,7 @@ mod tests {
             repo_dir,
             Some(toml::toml! {
                 [hg_branch]
-                symbol = "B "
+                symbol = "B"
                 truncation_length = 14
                 truncation_symbol = "%"
                 disabled = false

@@ -27,9 +27,9 @@ impl Default for PixiConfig<'_> {
         Self {
             pixi_binary: VecOr(vec!["pixi"]),
             show_default_environment: true,
-            format: "via [$symbol($version )(\\($environment\\) )]($style)",
+            format: "via [$symbol ($version )(\\($environment\\) )]($style)",
             version_format: "v${raw}",
-            symbol: "🧚 ",
+            symbol: "🧚",
             style: "yellow bold",
             disabled: false,
             detect_extensions: vec![],

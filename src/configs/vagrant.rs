@@ -21,9 +21,9 @@ pub struct VagrantConfig<'a> {
 impl Default for VagrantConfig<'_> {
     fn default() -> Self {
         Self {
-            format: "via [$symbol($version )]($style)",
+            format: "via [$symbol ($version )]($style)",
             version_format: "v${raw}",
-            symbol: "⍱ ",
+            symbol: "⍱",
             style: "cyan bold",
             disabled: false,
             detect_extensions: vec![],

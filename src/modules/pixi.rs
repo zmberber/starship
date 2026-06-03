@@ -133,7 +133,7 @@ mod tests {
             .env("PIXI_PROJECT_NAME", "my-project")
             .config(toml::toml! {
                 [pixi]
-                format = "via [$symbol($version )(\\($environment\\) )(\\[$project_name\\] )]($style)"
+                format = "via [$symbol ($version )(\\($environment\\) )(\\[$project_name\\] )]($style)"
             })
             .collect();
 
@@ -153,7 +153,7 @@ mod tests {
             .env("PIXI_ENVIRONMENT_NAME", "py312")
             .config(toml::toml! {
                 [pixi]
-                format = "via [$symbol($version )(\\($environment\\) )(\\[$project_name\\] )]($style)"
+                format = "via [$symbol ($version )(\\($environment\\) )(\\[$project_name\\] )]($style)"
             })
             .collect();
 

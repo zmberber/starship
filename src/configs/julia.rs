@@ -21,9 +21,9 @@ pub struct JuliaConfig<'a> {
 impl Default for JuliaConfig<'_> {
     fn default() -> Self {
         Self {
-            format: "via [$symbol($version )]($style)",
+            format: "via [$symbol ($version )]($style)",
             version_format: "v${raw}",
-            symbol: "ஃ ",
+            symbol: "ஃ",
             style: "bold purple",
             disabled: false,
             detect_extensions: vec!["jl"],

@@ -19,8 +19,8 @@ pub struct ClaudeModelConfig<'a> {
 impl Default for ClaudeModelConfig<'_> {
     fn default() -> Self {
         Self {
-            format: "[$symbol$model]($style) ",
-            symbol: "🤖 ",
+            format: "[$symbol $model]($style) ",
+            symbol: "🤖",
             style: "bold blue",
             model_aliases: IndexMap::new(),
             disabled: false,

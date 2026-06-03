@@ -21,8 +21,8 @@ pub struct DamlConfig<'a> {
 impl Default for DamlConfig<'_> {
     fn default() -> Self {
         Self {
-            symbol: "Λ ",
-            format: "via [$symbol($version )]($style)",
+            symbol: "Λ",
+            format: "via [$symbol ($version )]($style)",
             version_format: "v${raw}",
             style: "bold cyan",
             disabled: false,

@@ -18,8 +18,8 @@ pub struct SudoConfig<'a> {
 impl Default for SudoConfig<'_> {
     fn default() -> Self {
         Self {
-            format: "[as $symbol]($style)",
-            symbol: "🧙 ",
+            format: "[as $symbol ]($style)",
+            symbol: "🧙",
             style: "bold blue",
             allow_windows: false,
             disabled: true,

@@ -7,7 +7,7 @@ format = "via [$symbol]($style)"
 format = "with [$symbol]($style)"
 
 [c]
-format = "via [$symbol($name)]($style)"
+format = "via [$symbol ($name)]($style)"
 
 [cmake]
 format = "via [$symbol]($style)"
@@ -16,7 +16,7 @@ format = "via [$symbol]($style)"
 format = "via [$symbol]($style)"
 
 [cpp]
-format = "via [$symbol($name)]($style)"
+format = "via [$symbol ($name)]($style)"
 
 [crystal]
 format = "via [$symbol]($style)"
@@ -31,7 +31,7 @@ format = "via [$symbol]($style)"
 format = "via [$symbol]($style)"
 
 [dotnet]
-format = "[$symbol(🎯 $tfm )]($style)"
+format = "[$symbol (🎯 $tfm )]($style)"
 
 [elixir]
 format = 'via [$symbol]($style)'
@@ -94,7 +94,7 @@ format = 'via [$symbol]($style)'
 format = 'via [$symbol]($style)'
 
 [ocaml]
-format = 'via [$symbol(\($switch_indicator$switch_name\) )]($style)'
+format = 'via [$symbol (\($switch_indicator$switch_name\) )]($style)'
 
 [odin]
 format = 'via [$symbol]($style)'
@@ -109,10 +109,10 @@ format = 'via [$symbol]($style)'
 format = 'via [$symbol]($style)'
 
 [pixi]
-format = 'via [$symbol($environment )]($style)'
+format = 'via [$symbol ($environment )]($style)'
 
 [pulumi]
-format = 'via [$symbol$stack]($style)'
+format = 'via [$symbol $stack]($style)'
 
 [purescript]
 format = 'via [$symbol]($style)'

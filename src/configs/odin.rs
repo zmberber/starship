@@ -21,9 +21,9 @@ pub struct OdinConfig<'a> {
 impl Default for OdinConfig<'_> {
     fn default() -> Self {
         Self {
-            format: "via [$symbol($version )]($style)",
+            format: "via [$symbol ($version )]($style)",
             show_commit: false,
-            symbol: "Ø ",
+            symbol: "Ø",
             style: "bold bright-blue",
             disabled: false,
             detect_extensions: vec!["odin"],

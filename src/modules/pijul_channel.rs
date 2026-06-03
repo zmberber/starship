@@ -140,7 +140,7 @@ mod tests {
             Some(toml::toml! {
                 [pijul_channel]
                 style = "underline blue"
-                symbol = "P "
+                symbol = "P"
                 truncation_length = 14
                 truncation_symbol = "%"
                 disabled = false

@@ -23,10 +23,10 @@ impl Default for HostnameConfig<'_> {
     fn default() -> Self {
         Self {
             ssh_only: true,
-            ssh_symbol: "🌐 ",
+            ssh_symbol: "🌐",
             trim_at: ".",
             detect_env_vars: vec![],
-            format: "[$ssh_symbol$hostname]($style) in ",
+            format: "[($ssh_symbol )$hostname]($style) in ",
             style: "green dimmed bold",
             disabled: false,
             aliases: IndexMap::new(),

@@ -35,10 +35,10 @@ impl Default for PythonConfig<'_> {
                 VecOr(vec!["python3"]),
                 VecOr(vec!["python2"]),
             ]),
-            format: "via [${symbol}${pyenv_prefix}(${version} )(\\($virtualenv\\) )]($style)",
+            format: "via [${symbol} ${pyenv_prefix}(${version} )(\\($virtualenv\\) )]($style)",
             version_format: "v${raw}",
             style: "yellow bold",
-            symbol: "🐍 ",
+            symbol: "🐍",
             disabled: false,
             detect_extensions: vec!["py", "ipynb"],
             detect_files: vec![

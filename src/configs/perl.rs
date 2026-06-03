@@ -21,9 +21,9 @@ pub struct PerlConfig<'a> {
 impl Default for PerlConfig<'_> {
     fn default() -> Self {
         Self {
-            format: "via [$symbol($version )]($style)",
+            format: "via [$symbol ($version )]($style)",
             version_format: "v${raw}",
-            symbol: "🐪 ",
+            symbol: "🐪",
             style: "149 bold",
             disabled: false,
             detect_extensions: vec!["pl", "pm", "pod"],

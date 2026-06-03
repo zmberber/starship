@@ -23,11 +23,11 @@ pub struct OCamlConfig<'a> {
 impl Default for OCamlConfig<'_> {
     fn default() -> Self {
         Self {
-            format: "via [$symbol($version )(\\($switch_indicator$switch_name\\) )]($style)",
+            format: "via [$symbol ($version )(\\($switch_indicator$switch_name\\) )]($style)",
             version_format: "v${raw}",
             global_switch_indicator: "",
             local_switch_indicator: "*",
-            symbol: "🐫 ",
+            symbol: "🐫",
             style: "bold yellow",
             disabled: false,
             detect_extensions: vec!["opam", "ml", "mli", "re", "rei"],

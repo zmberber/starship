@@ -110,7 +110,7 @@ mod tests {
             .claude_code_data(data)
             .collect();
 
-        let expected = Some(format!("{} ", Color::Blue.bold().paint("Sonnet 4.5")));
+        let expected = Some(format!("{} ", Color::Blue.bold().paint(" Sonnet 4.5")));
         assert_eq!(actual, expected);
     }
 
@@ -137,7 +137,7 @@ mod tests {
 
         let expected = Some(format!(
             "{} ",
-            Color::Blue.bold().paint("Claude 3.5 Sonnet")
+            Color::Blue.bold().paint(" Claude 3.5 Sonnet")
         ));
         assert_eq!(actual, expected);
     }
@@ -165,7 +165,7 @@ mod tests {
             .claude_code_data(data)
             .collect();
 
-        let expected = Some(format!("{} ", Color::Blue.bold().paint("Sonnet")));
+        let expected = Some(format!("{} ", Color::Blue.bold().paint(" Sonnet")));
         assert_eq!(actual, expected);
     }
 }

@@ -21,9 +21,9 @@ pub struct DockerContextConfig<'a> {
 impl Default for DockerContextConfig<'_> {
     fn default() -> Self {
         Self {
-            symbol: "🐳 ",
+            symbol: "🐳",
             style: "blue bold",
-            format: "via [$symbol$context]($style) ",
+            format: "via [$symbol $context]($style) ",
             only_with_files: true,
             disabled: false,
             detect_extensions: vec![],

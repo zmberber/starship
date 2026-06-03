@@ -26,8 +26,8 @@ pub struct DirenvConfig<'a> {
 impl Default for DirenvConfig<'_> {
     fn default() -> Self {
         Self {
-            format: "[$symbol$loaded/$allowed]($style) ",
-            symbol: "direnv ",
+            format: "[$symbol $loaded/$allowed]($style) ",
+            symbol: "direnv",
             style: "bold bright-yellow",
             disabled: true,
             detect_extensions: vec![],

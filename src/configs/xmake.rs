@@ -21,9 +21,9 @@ pub struct XMakeConfig<'a> {
 impl Default for XMakeConfig<'_> {
     fn default() -> Self {
         Self {
-            format: "via [$symbol($version )]($style)",
+            format: "via [$symbol ($version )]($style)",
             version_format: "v${raw}",
-            symbol: "△ ",
+            symbol: "△",
             style: "bold green",
             disabled: false,
             detect_extensions: vec![],

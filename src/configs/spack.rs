@@ -19,8 +19,8 @@ impl Default for SpackConfig<'_> {
     fn default() -> Self {
         Self {
             truncation_length: 1,
-            format: "via [$symbol$environment]($style) ",
-            symbol: "🅢 ",
+            format: "via [$symbol $environment]($style) ",
+            symbol: "🅢",
             style: "blue bold",
             disabled: false,
         }

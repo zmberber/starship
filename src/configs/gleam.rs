@@ -21,9 +21,9 @@ pub struct GleamConfig<'a> {
 impl Default for GleamConfig<'_> {
     fn default() -> Self {
         Self {
-            format: "via [$symbol($version )]($style)",
+            format: "via [$symbol ($version )]($style)",
             version_format: "v${raw}",
-            symbol: "⭐ ",
+            symbol: "⭐",
             style: "bold #FFAFF3",
             disabled: false,
             detect_extensions: vec!["gleam"],
